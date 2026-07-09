@@ -1,0 +1,53 @@
+:root{
+    --rosa:#F8D7DA;
+    --verde:#A8D5BA;
+    --blanco:#FFFFFF;
+    --dorado:#D4AF37;
+    --gris:#555555;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+header{
+    background:var(--blanco);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--gris);
+    font-weight:bold;
+}
+
+
+.banner{
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav a:hover{
+    color:var(--dorado);
+}
+
+
+nav a{
+    transition:0.3s;
+}
+
+.banner{
+    transition:0.5s ease;
+}
+
