@@ -32,10 +32,19 @@ nav a{
 
 
 .banner{
-    height:500px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+height:500px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background-size:cover;
+
+background-position:center;
+
 }
 
 nav a:hover{
