@@ -1,62 +1,113 @@
+/* =====================================================
+   VARIABLES GLOBALES
+   Se definen los colores principales que utilizará
+   el sitio web para mantener un diseño uniforme.
+===================================================== */
 :root{
-    --rosa:#F8D7DA;
-    --verde:#A8D5BA;
-    --blanco:#FFFFFF;
-    --dorado:#D4AF37;
-    --gris:#555555;
+    --rosa:#F8D7DA;      /* Color rosa claro */
+    --verde:#A8D5BA;     /* Color verde suave */
+    --blanco:#FFFFFF;    /* Color blanco */
+    --dorado:#D4AF37;    /* Color dorado */
+    --gris:#555555;      /* Color gris oscuro para textos */
 }
 
+/* =====================================================
+   ESTILOS GENERALES DEL DOCUMENTO
+===================================================== */
 body{
+    /* Define la fuente principal del sitio */
     font-family:'Poppins',sans-serif;
 }
 
+/* =====================================================
+   ENCABEZADO (HEADER)
+===================================================== */
 header{
+    /* Fondo blanco para el encabezado */
     background:var(--blanco);
+
+    /* Activa Flexbox para organizar los elementos */
     display:flex;
+
+    /* Coloca el logo a la izquierda y el menú a la derecha */
     justify-content:space-between;
+
+    /* Centra verticalmente los elementos */
     align-items:center;
+
+    /* Espaciado interno del encabezado */
     padding:20px;
 }
 
+/* =====================================================
+   MENÚ DE NAVEGACIÓN
+===================================================== */
 nav ul{
+    /* Organiza los elementos del menú en una fila */
     display:flex;
+
+    /* Espacio entre cada opción del menú */
     gap:25px;
+
+    /* Elimina los puntos de la lista */
     list-style:none;
 }
 
+/* =====================================================
+   ENLACES DEL MENÚ
+===================================================== */
 nav a{
+    /* Elimina el subrayado de los enlaces */
     text-decoration:none;
+
+    /* Aplica el color gris definido en las variables */
     color:var(--gris);
+
+    /* Coloca el texto en negrita */
     font-weight:bold;
 }
 
-
+/* =====================================================
+   BANNER PRINCIPAL
+===================================================== */
 .banner{
 
-height:500px;
+    /* Altura del banner */
+    height:500px;
 
-display:flex;
+    /* Activa Flexbox */
+    display:flex;
 
-justify-content:center;
+    /* Centra el contenido horizontalmente */
+    justify-content:center;
 
-align-items:center;
+    /* Centra el contenido verticalmente */
+    align-items:center;
 
-background-size:cover;
+    /* Hace que la imagen cubra todo el banner */
+    background-size:cover;
 
-background-position:center;
-
+    /* Centra la imagen de fondo */
+    background-position:center;
 }
 
+/* =====================================================
+   EFECTO AL PASAR EL CURSOR SOBRE EL MENÚ
+===================================================== */
 nav a:hover{
+    /* Cambia el color del enlace a dorado */
     color:var(--dorado);
 }
 
-
+/* =====================================================
+   TRANSICIONES
+===================================================== */
 nav a{
+    /* Hace que el cambio de color sea suave */
     transition:0.3s;
 }
 
 .banner{
+    /* Hace suaves los cambios que se apliquen al banner */
     transition:0.5s ease;
 }
-
